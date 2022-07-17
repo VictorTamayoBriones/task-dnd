@@ -1,0 +1,29 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+main{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-card{
+  border: solid 1px lightsalmon;
+  border-radius: 3px;
+  padding: 8px;
+  margin: 5px 0;
+  background: #fff;
+  color: lightcoral;
+}
+
+.col-task{
+  width: 30%;
+  background: #ccc;
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-radius: 3px;
+}
