@@ -1,5 +1,9 @@
-import { useState } from "react";
+import { forwardRef, useState, createRef } from "react";
 import { ReactSortable } from 'react-sortablejs';
+
+const CustomComponent = forwardRef((props, ref) => {
+  return <div className="test" ref={ref}>{props.children}</div>;
+});
 
 function App() {
   const [tasks, setTasks]=useState([
@@ -38,7 +42,7 @@ function App() {
     <main>
       <div className="col-task">  
       <h2>Task</h2>
-        <ReactSortable list={tasks} setList={setTasks} multiDrag group='test' animation={200} delayOnTouchStart={true} delay={2}>
+        <ReactSortable tag={CustomComponent} list={tasks} setList={setTasks} multiDrag group='test' >
           {
             tasks.map(task=>(
               <div key={task.id} className="task-card">
@@ -51,7 +55,7 @@ function App() {
       
       <div className="col-task">
         <h2>Process</h2>
-        <ReactSortable list={process} setList={setProcess} multiDrag group='test' animation={200} delayOnTouchStart={true} delay={2}>
+        <ReactSortable tag={CustomComponent} list={process} setList={setProcess} multiDrag group='test'>
           {
             process.map(item => (
               <div key={item.id} className="task-card">
@@ -64,7 +68,7 @@ function App() {
 
       <div className="col-task">
         <h2>Finish</h2>
-        <ReactSortable list={finish} setList={setFinish} multiDrag group='test' animation={200} delayOnTouchStart={true} delay={2}>
+        <ReactSortable tag={CustomComponent} list={finish} setList={setFinish} multiDrag group='test'>
           {
             finish.map(item => (
               <div key={item.id} className="task-card">
