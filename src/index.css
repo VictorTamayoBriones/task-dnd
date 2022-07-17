@@ -6,9 +6,13 @@
 
 main{
   width: 90%;
+  min-width: 400px;
+  min-height: 300px;
+  overflow-x: scroll;
   margin: auto;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .task-card{
@@ -23,6 +27,7 @@ main{
 
 .col-task{
   width: 30%;
+  min-width: 200px;
   background: #ccc;
   margin: 20px 0;
   padding: 15px 20px;
