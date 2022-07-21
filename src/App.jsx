@@ -1,6 +1,5 @@
 import { forwardRef, useState } from "react";
 import { ReactSortable } from 'react-sortablejs';
-import { Column } from "./column";
 import { Col } from "./styled-components/Column-styled";
 import { Main } from "./styled-components/Main";
 
