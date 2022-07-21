@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Main = styled.main`
     background: transparent;
-    height: 90vh;
-    padding: 0 10px 30px 10px;
+    height: 100vh;
+    padding: 50px 10px 30px 10px;
     width: 95%;
     min-width: 400px;
     overflow-x: scroll;

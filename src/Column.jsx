@@ -15,7 +15,7 @@ export const Column = ({columnName, grupo}) =>{
             
         <Prueba className="col-task">  
             <h2>{columnName}</h2>
-            <ReactSortable  tag={CustomComponent} list={list} setList={setList} multiDrag group={grupo} animation={200}>
+            <ReactSortable  tag={CustomComponent}  >
                 {list?.map(task=>(
                 <TaskStyled key={task.id} className="task-card">
                     {task.name}
