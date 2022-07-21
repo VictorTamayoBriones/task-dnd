@@ -1,12 +1,15 @@
-import { forwardRef, useState, createRef } from "react";
+import { forwardRef, useState } from "react";
 import { ReactSortable } from 'react-sortablejs';
+import { Column } from "./column";
+import { Col } from "./styled-components/Column-styled";
+import { Main } from "./styled-components/Main";
 
 const CustomComponent = forwardRef((props, ref) => {
   return <div className="test" ref={ref}>{props.children}</div>;
 });
 
 function App() {
-  const [tasks, setTasks]=useState([
+  const[tasks, setTasks]=useState([
     {
       id:1,
       name: 'Do homework'
@@ -25,7 +28,7 @@ function App() {
     },
   ])
 
-  const [process, setProcess]=useState([
+  const[process, setProcess]=useState([
     {
       id: 9,
       name: 'Test dnd'
@@ -36,13 +39,13 @@ function App() {
     },
   ])
 
-  const [finish, setFinish]=useState([])
+  const[finish, setFinish]=useState([])
 
   return (
-    <main>
-      <div className="col-task">  
-      <h2>Task</h2>
-        <ReactSortable tag={CustomComponent} list={tasks} setList={setTasks} multiDrag group='test' >
+    <Main>
+      <Col>
+      <h2>Pending</h2>
+        <ReactSortable  tag={CustomComponent} list={tasks} setList={setTasks} multiDrag group='test' >
           {
             tasks.map(task=>(
               <div key={task.id} className="task-card">
@@ -51,9 +54,9 @@ function App() {
             ))
           }
         </ReactSortable>
-      </div>
+      </Col>
       
-      <div className="col-task">
+      <Col>
         <h2>Process</h2>
         <ReactSortable tag={CustomComponent} list={process} setList={setProcess} multiDrag group='test'>
           {
@@ -64,10 +67,10 @@ function App() {
             ))
           }
         </ReactSortable>
-      </div>
+      </Col>
 
-      <div className="col-task">
-        <h2>Finish</h2>
+      <Col>
+        <h2>Finalized</h2>
         <ReactSortable tag={CustomComponent} list={finish} setList={setFinish} multiDrag group='test'>
           {
             finish.map(item => (
@@ -77,8 +80,8 @@ function App() {
             ))
           }
         </ReactSortable>
-      </div>
-    </main>
+      </Col>
+    </Main>
   )
 }
 

@@ -4,24 +4,19 @@
   box-sizing:border-box;
 }
 
-main{
-  width: 90%;
-  min-width: 400px;
-  min-height: 300px;
-  overflow-x: scroll;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+body{
+  background: #0D0D0D;
 }
 
 .task-card{
-  border: solid 1px lightsalmon;
   border-radius: 3px;
   padding: 8px;
-  margin: 5px 0;
-  background: #fff;
-  color: lightcoral;
+  margin: 15px 0;
+  background: #730255;
+  color: #ff00ee;
+  -webkit-text-stroke: .2px #fff;
+  letter-spacing: .5px;
+  box-shadow: 0px 0px 9px 1px #ff00eea7;
   cursor: grab;
 }
 
@@ -37,3 +32,24 @@ main{
 .test{
   height: 100%;
 }
+
+/* Color Theme Swatches in Hex */
+.Background-of-an-empty-room-with-brick-walls-and-neon-lights.-Silhouettes-of-tropical-leaves,-colorful-smoke-1-hex { color: #730255; }
+.Background-of-an-empty-room-with-brick-walls-and-neon-lights.-Silhouettes-of-tropical-leaves,-colorful-smoke-2-hex { color: #BF06A0; }
+.Background-of-an-empty-room-with-brick-walls-and-neon-lights.-Silhouettes-of-tropical-leaves,-colorful-smoke-3-hex { color: #D911CB; }
+.Background-of-an-empty-room-with-brick-walls-and-neon-lights.-Silhouettes-of-tropical-leaves,-colorful-smoke-4-hex { color: #0B9ED9; }
+.Background-of-an-empty-room-with-brick-walls-and-neon-lights.-Silhouettes-of-tropical-leaves,-colorful-smoke-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Background-of-an-empty-room-with-brick-walls-and-neon-lights.-Silhouettes-of-tropical-leaves,-colorful-smoke-1-rgba { color: rgba(114, 2, 84, 1); }
+.Background-of-an-empty-room-with-brick-walls-and-neon-lights.-Silhouettes-of-tropical-leaves,-colorful-smoke-2-rgba { color: rgba(191, 5, 160, 1); }
+.Background-of-an-empty-room-with-brick-walls-and-neon-lights.-Silhouettes-of-tropical-leaves,-colorful-smoke-3-rgba { color: rgba(216, 17, 203, 1); }
+.Background-of-an-empty-room-with-brick-walls-and-neon-lights.-Silhouettes-of-tropical-leaves,-colorful-smoke-4-rgba { color: rgba(10, 158, 216, 1); }
+.Background-of-an-empty-room-with-brick-walls-and-neon-lights.-Silhouettes-of-tropical-leaves,-colorful-smoke-5-rgba { color: rgba(12, 12, 12, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Background-of-an-empty-room-with-brick-walls-and-neon-lights.-Silhouettes-of-tropical-leaves,-colorful-smoke-1-hsla { color: hsla(315, 96, 22, 1); }
+.Background-of-an-empty-room-with-brick-walls-and-neon-lights.-Silhouettes-of-tropical-leaves,-colorful-smoke-2-hsla { color: hsla(309, 94, 38, 1); }
+.Background-of-an-empty-room-with-brick-walls-and-neon-lights.-Silhouettes-of-tropical-leaves,-colorful-smoke-3-hsla { color: hsla(303, 85, 45, 1); }
+.Background-of-an-empty-room-with-brick-walls-and-neon-lights.-Silhouettes-of-tropical-leaves,-colorful-smoke-4-hsla { color: hsla(196, 90, 44, 1); }
+.Background-of-an-empty-room-with-brick-walls-and-neon-lights.-Silhouettes-of-tropical-leaves,-colorful-smoke-5-hsla { color: hsla(0, 0, 5, 1); }
