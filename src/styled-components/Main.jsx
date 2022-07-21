@@ -6,14 +6,14 @@ export const Main = styled.main`
     padding: 50px 10px 30px 10px;
     width: 95%;
     min-width: 400px;
-    overflow-x: scroll;
     margin: auto;
     display: flex;
     justify-content: space-between;
     gap: 20px;
 
     @media(max-width: 700px){
-        min-width: 900px;
-        justify-content: flex-start;
+        width: ${ (props)=>props.isOnAddTask ? 'auto' : '900px' };
+        overflow: ${ (props)=>props.isOnAddTask ? 'hidden' : 'visible' };
+        height: 90vh;
     }
 `;

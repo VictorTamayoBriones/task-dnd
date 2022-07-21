@@ -19,7 +19,7 @@ function App() {
   const[isAddTask, setIsAddTask]=useState(false);
 
   return (
-    <Main>
+    <Main isOnAddTask={ isAddTask } >
       <FormAddTask isOnAddTask={ isAddTask } onClick={setIsAddTask} setTasks={setTasks} tasks={tasks} />
       <AddTaskButton onClick={setIsAddTask} />
       <Col>
