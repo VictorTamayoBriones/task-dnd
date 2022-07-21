@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Main = styled.main`
     background: transparent;
-    height: 100vh;
+    height: 90vh;
     padding: 0 10px 30px 10px;
     width: 95%;
     min-width: 400px;
@@ -11,4 +11,9 @@ export const Main = styled.main`
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
+    @media(max-width: 700px){
+        min-width: 900px;
+        justify-content: flex-start;
+    }
 `;

@@ -14,4 +14,6 @@ export const Col = styled.div`
     h2{
         color: ${ theme.azul }
     }
+
+    
 `;
